@@ -4,76 +4,76 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens to match Japanese craft aesthetic with warm earth tones */
-  --background: oklch(1 0 0); /* Pure white */
-  --foreground: oklch(0.35 0 0); /* Dark gray for text */
-  --card: oklch(0.98 0.02 85); /* Soft cream background */
-  --card-foreground: oklch(0.35 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.35 0 0);
-  --primary: oklch(0.45 0.15 65); /* Warm amber/yellow-700 */
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.98 0.02 85); /* Soft cream */
-  --secondary-foreground: oklch(0.35 0 0);
-  --muted: oklch(0.96 0.01 85);
-  --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.65 0.2 285); /* Vibrant purple accent */
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0.01 85);
-  --input: oklch(1 0 0);
-  --ring: oklch(0.65 0.2 285 / 0.3); /* Purple focus ring */
-  --chart-1: oklch(0.6 0.18 75); /* Warm orange */
-  --chart-2: oklch(0.55 0.2 240); /* Blue */
-  --chart-3: oklch(0.6 0.18 150); /* Green */
-  --chart-4: oklch(0.6 0.2 285); /* Purple */
-  --chart-5: oklch(0.55 0.22 25); /* Red */
+  /* Updated color palette for Japanese traditional crafts theme */
+  --background: oklch(1 0 0); /* Pure white background */
+  --foreground: oklch(0.35 0.02 258); /* Dark slate for text */
+  --card: oklch(0.98 0.01 340); /* Soft pink for cards */
+  --card-foreground: oklch(0.35 0.02 258); /* Dark slate text on cards */
+  --popover: oklch(1 0 0); /* White for popovers */
+  --popover-foreground: oklch(0.35 0.02 258); /* Dark slate text in popovers */
+  --primary: oklch(0.45 0.22 15); /* Rich rose for primary actions */
+  --primary-foreground: oklch(1 0 0); /* White text on primary */
+  --secondary: oklch(0.65 0.25 330); /* Vibrant pink for secondary */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.98 0 0); /* Light gray for muted areas */
+  --muted-foreground: oklch(0.35 0.02 258); /* Dark slate for muted text */
+  --accent: oklch(0.65 0.25 330); /* Vibrant pink for accents */
+  --accent-foreground: oklch(1 0 0); /* White text on accents */
+  --destructive: oklch(0.6 0.25 25); /* Red for destructive actions */
+  --destructive-foreground: oklch(1 0 0); /* White text on destructive */
+  --border: oklch(0.9 0.01 258); /* Light border color */
+  --input: oklch(0.96 0.01 258); /* Light input background */
+  --ring: oklch(0.45 0.22 15); /* Rose focus ring */
+  --chart-1: oklch(0.65 0.25 330); /* Pink for charts */
+  --chart-2: oklch(0.55 0.15 200); /* Teal for charts */
+  --chart-3: oklch(0.5 0.18 150); /* Green for charts */
+  --chart-4: oklch(0.35 0.02 258); /* Dark slate for charts */
+  --chart-5: oklch(0.98 0.01 340); /* Soft pink for charts */
   --radius: 0.5rem;
-  --sidebar: oklch(0.98 0.02 85);
-  --sidebar-foreground: oklch(0.35 0 0);
-  --sidebar-primary: oklch(0.45 0.15 65);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.35 0.02 258);
+  --sidebar-primary: oklch(0.45 0.22 15);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.65 0.2 285);
+  --sidebar-accent: oklch(0.65 0.25 330);
   --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.9 0.01 85);
-  --sidebar-ring: oklch(0.65 0.2 285 / 0.3);
+  --sidebar-border: oklch(0.9 0.01 258);
+  --sidebar-ring: oklch(0.45 0.22 15);
 }
 
 .dark {
-  /* Updated dark mode colors to maintain Japanese aesthetic */
-  --background: oklch(0.12 0 0);
-  --foreground: oklch(0.95 0 0);
-  --card: oklch(0.15 0 0);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.15 0 0);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.55 0.18 65); /* Lighter amber for dark mode */
-  --primary-foreground: oklch(0.12 0 0);
-  --secondary: oklch(0.2 0 0);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.2 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.7 0.22 285); /* Brighter purple for dark mode */
-  --accent-foreground: oklch(0.12 0 0);
-  --destructive: oklch(0.6 0.22 25);
-  --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.2 0 0);
-  --input: oklch(0.2 0 0);
-  --ring: oklch(0.7 0.22 285 / 0.3);
-  --chart-1: oklch(0.65 0.2 75);
-  --chart-2: oklch(0.6 0.22 240);
-  --chart-3: oklch(0.65 0.2 150);
-  --chart-4: oklch(0.7 0.22 285);
-  --chart-5: oklch(0.6 0.24 25);
-  --sidebar: oklch(0.15 0 0);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.55 0.18 65);
-  --sidebar-primary-foreground: oklch(0.12 0 0);
-  --sidebar-accent: oklch(0.7 0.22 285);
-  --sidebar-accent-foreground: oklch(0.12 0 0);
-  --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: oklch(0.7 0.22 285 / 0.3);
+  /* Dark mode colors maintaining Japanese aesthetic */
+  --background: oklch(0.08 0.01 258);
+  --foreground: oklch(0.95 0.01 340);
+  --card: oklch(0.12 0.01 258);
+  --card-foreground: oklch(0.95 0.01 340);
+  --popover: oklch(0.08 0.01 258);
+  --popover-foreground: oklch(0.95 0.01 340);
+  --primary: oklch(0.55 0.22 15);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.3 0.02 258);
+  --secondary-foreground: oklch(0.95 0.01 340);
+  --muted: oklch(0.15 0.01 258);
+  --muted-foreground: oklch(0.7 0.01 258);
+  --accent: oklch(0.65 0.25 330);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.5 0.2 25);
+  --destructive-foreground: oklch(0.9 0.1 25);
+  --border: oklch(0.2 0.01 258);
+  --input: oklch(0.15 0.01 258);
+  --ring: oklch(0.55 0.22 15);
+  --chart-1: oklch(0.65 0.25 330);
+  --chart-2: oklch(0.6 0.15 200);
+  --chart-3: oklch(0.6 0.18 150);
+  --chart-4: oklch(0.7 0.15 300);
+  --chart-5: oklch(0.65 0.2 50);
+  --sidebar: oklch(0.08 0.01 258);
+  --sidebar-foreground: oklch(0.95 0.01 340);
+  --sidebar-primary: oklch(0.65 0.25 330);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.3 0.02 258);
+  --sidebar-accent-foreground: oklch(0.95 0.01 340);
+  --sidebar-border: oklch(0.2 0.01 258);
+  --sidebar-ring: oklch(0.55 0.22 15);
 }
 
 @theme inline {
