@@ -839,39 +839,38 @@ export default function CraftDiagnosticApp() {
 
         {/* 結果画面 */}
         {currentStep === "result" && result && (
-          <div className="space-y-6">
-            <Card className="bg-card border-border">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl text-card-foreground">あなたにおすすめの伝統工芸品</CardTitle>
+          <div className="bg-[#F7F5E6] space-y-2">
+            <Card className="bg-[#F7F5E6] border-border">
+              <CardHeader className="bg-[#F7F5E6] text-center pb-1">
+                <CardTitle className="bg-[#F7F5E6] text-2xl sm:text-3xl text-card-foreground text-center px-2 leading-tight break-words">あなたにおすすめの伝統工芸品</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="text-center">
+              <CardContent className="bg-[#F7F5E6] space-y-1 flex flex-col items-center justify-center">
+                <div className="w-full max-w-md mx-auto h-40 flex items-center justify-center rounded-lg mb-1 bg-[#F7F5E6]">
                   <img
                     src={result?.image || "/placeholder.svg"}
                     alt={result?.name}
-                    className="w-full max-w-md mx-auto h-64 object-cover rounded-lg mb-4"
+                    className="h-full object-cover rounded-lg bg-[#F7F5E6]"
                   />
-                  <h2 className="text-3xl font-bold text-primary mb-2">{result?.name}</h2>
-                  <p className="text-lg text-card-foreground text-pretty">{result?.description}</p>
                 </div>
+                <h2 className="text-3xl font-bold text-primary mb-0">{result?.name}</h2>
+                <p className="text-lg text-card-foreground text-pretty mb-1">{result?.description}</p>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-3">あなたの特性</h3>
-                    <div className="flex flex-wrap gap-2">
+                <div className="flex flex-row gap-4 w-full justify-center mb-1">
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-semibold text-card-foreground mb-0">あなたの特性</h3>
+                    <div className="flex flex-wrap gap-0.5">
                       {result?.traits?.map((trait, index) => (
-                        <Badge key={index} variant="secondary" className="bg-secondary text-secondary-foreground">
+                        <Badge key={index} variant="secondary" className="bg-secondary text-secondary-foreground text-sm px-2 py-1">
                           {trait}
                         </Badge>
                       ))}
                     </div>
                   </div>
-
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-3">主な産地</h3>
-                    <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-semibold text-card-foreground mb-0">主な産地</h3>
+                    <div className="flex flex-wrap gap-0.5">
                       {result?.regions?.map((region, index) => (
-                        <Badge key={index} variant="outline" className="border-border">
+                        <Badge key={index} variant="outline" className="border-border text-sm px-2 py-1">
                           {region}
                         </Badge>
                       ))}
@@ -879,8 +878,8 @@ export default function CraftDiagnosticApp() {
                   </div>
                 </div>
 
-                <div>
-                  <h3 className="font-semibold text-card-foreground mb-2">難易度</h3>
+                <div className="flex flex-col items-start w-full max-w-xs mb-1">
+                  <h3 className="font-semibold text-card-foreground mb-0">難易度</h3>
                   <Badge
                     variant={
                       result?.difficulty === "初級"
@@ -901,20 +900,20 @@ export default function CraftDiagnosticApp() {
                   </Badge>
                 </div>
 
-                <div className="text-center space-y-4">
-                  <p className="text-muted-foreground text-pretty">
+                <div className="text-center mb-1">
+                  <p className="text-muted-foreground text-pretty mb-1">
                     この工芸品があなたの性格や好みに最も適しています。<br />ぜひ体験教室や工房見学から始めてみてください！
                   </p>
-                  <div className="flex gap-4 justify-center">
+                  <div className="flex gap-1 justify-center">
                     <Button
                       onClick={() => resetQuiz()}
                       variant="outline"
-                      className="border-border hover:bg-accent hover:text-accent-foreground bg-transparent"
+                      className="border-border hover:bg-accent hover:text-accent-foreground bg-transparent px-3 py-1 text-base"
                     >
                       もう一度診断する
                     </Button>
                     <Button
-                      className="bg-primary text-primary-foreground hover:bg-primary/90"
+                      className="bg-primary text-primary-foreground hover:bg-primary/90 px-3 py-1 text-base"
                       onClick={() => window.open(`https://www.google.com/search?q=${result?.name}+体験教室`, "_blank")}
                     >
                       体験教室を探す
@@ -952,7 +951,7 @@ export default function CraftDiagnosticApp() {
         )}
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+  <div className="min-h-screen flex flex-col justify-between bg-[#F7F5E6]">
       <div className="flex-1">
         {/* 診断画面 or 結果画面 */}
           {currentStep === "start" ? (
@@ -1028,6 +1027,7 @@ export default function CraftDiagnosticApp() {
           <div className="space-y-6">
             <Card className="bg-card border-border">
               <CardHeader className="text-center">
+                <CardTitle className="text-5xl text-card-foreground">診断結果</CardTitle>
                 <CardTitle className="text-2xl text-card-foreground">あなたにおすすめの伝統工芸品</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -1133,7 +1133,7 @@ export default function CraftDiagnosticApp() {
         ) : null}
       </div>
       {/* 下部和柄（画像波模様） */}
-      <div className="w-full h-[250px] bg-transparent flex-shrink-0">
+  <div className="w-full h-[320px] bg-transparent flex-shrink-0">
         <img src="/Gemini_Generated_Image_bpwekbpwekbpwekb (1).png" alt="和柄波模様" className="w-full h-full object-cover" />
       </div>
     </div>

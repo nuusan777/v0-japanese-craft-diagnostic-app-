@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className="font-sans">
+  <body className="font-sans bg-[#F7F5E6]">
         <Suspense fallback={null}>{children}</Suspense>
       </body>
     </html>

@@ -8,6 +8,7 @@
 html, body {
   font-family: 'Hina Mincho', 'Noto Sans JP', serif;
   font-size: 18px;
+  background-color: #F7F5E6 !important;
 }
 p{
   font-size: 17px;
@@ -133,5 +134,6 @@ p{
   }
   body {
     @apply bg-background text-foreground;
+    background-color: #F7F5E6 !important;
   }
 }
