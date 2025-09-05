@@ -1,11 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
+html, body {
+  font-family: 'Hina Mincho', 'Noto Sans JP', serif;
+  font-size: 18px;
+}
+p{
+  font-size: 17px;
+}
+
 :root {
   /* Updated color palette for Japanese traditional crafts theme */
-  --background: oklch(1 0 0); /* Pure white background */
+  --background: #F7F5E6; /* 淡いクリーム色背景 */
   --foreground: oklch(0.35 0.02 258); /* Dark slate for text */
   --card: oklch(0.98 0.01 340); /* Soft pink for cards */
   --card-foreground: oklch(0.35 0.02 258); /* Dark slate text on cards */
