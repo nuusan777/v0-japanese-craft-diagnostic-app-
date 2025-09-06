@@ -925,6 +925,11 @@ export default function CraftDiagnosticApp() {
 
             {/* 他の工芸品も表示 */}
             <Card className="bg-card border-border">
+                    {/* 愛着度ランクと総獲得ポイントを大きく表示 */}
+                    <div className="flex flex-col items-center justify-center my-8">
+                      <div className="text-4xl font-bold text-pink-600 mb-2">愛着度ランク: S</div>
+                      <div className="text-3xl font-semibold text-blue-600">総獲得ポイント: 123pt</div>
+                    </div>
               <CardHeader>
                 <CardTitle className="text-xl text-card-foreground">他の伝統工芸品も見てみる</CardTitle>
               </CardHeader>
