@@ -983,7 +983,7 @@ export default function CraftDiagnosticApp() {
               <div className="w-full max-w-sm mx-auto flex flex-col items-center mb-6">
                 <h1 className="text-2xl md:text-3xl font-bold text-center mb-2 tracking-wide">推し伝統品診断</h1>
                 <p className="text-xs text-center text-muted-foreground mb-4 tracking-wider leading-relaxed font-normal">
-                  １５の質問に答えて、５０種類の伝統工芸品から<br />
+                  １５の質問に答えて５０種類の伝統工芸品から<br />
                   あなたにぴったりのものを発見してください
                 </p>
               </div>
@@ -1133,9 +1133,14 @@ export default function CraftDiagnosticApp() {
         ) : null}
       </div>
       {/* 下部和柄（画像波模様） */}
-  <div className="w-full h-[320px] bg-transparent flex-shrink-0">
-        <img src="/Gemini_Generated_Image_bpwekbpwekbpwekb (1).png" alt="和柄波模様" className="w-full h-full object-cover" />
-      </div>
+  <div className="w-full flex justify-center items-end bg-transparent flex-shrink-0" style={{height: "320px"}}>
+    <img
+      src="/Gemini_Generated_Image_bpwekbpwekbpwekb (1).png"
+      alt="和柄波模様"
+      style={{ width: result ? "100%" : "600px", height: "100%", objectFit: "cover" }}
+      className="rounded-lg shadow"
+    />
+  </div>
     </div>
 
   );
