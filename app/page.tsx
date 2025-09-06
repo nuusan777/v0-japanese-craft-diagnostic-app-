@@ -1101,6 +1101,15 @@ export default function CraftDiagnosticApp() {
                     >
                       体験教室を探す
                     </Button>
+                    <Button
+                      className="bg-primary text-primary-foreground hover:bg-primary/90"
+                      onClick={() => window.open("https://homepage-kappa-lemon.vercel.app/")}
+                    >
+                      ホーム
+                    </Button>
+                    
+                    
+                    
                   </div>
                 </div>
               </CardContent>
