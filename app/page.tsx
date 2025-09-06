@@ -1112,6 +1112,27 @@ export default function CraftDiagnosticApp() {
                     >
                       ホーム
                     </Button>
+                      {/* 拡散ボタン */}
+                      <div className="flex gap-2 justify-center mt-4">
+                        <Button
+                          className="bg-blue-500 text-white hover:bg-blue-600"
+                          onClick={() => window.open(`https://twitter.com/intent/tweet?text=私の推し伝統工芸品は「${result?.name}」！診断はこちら→${window.location.href}`, "_blank")}
+                        >
+                          xで拡散
+                        </Button>
+                        <Button
+                          className="bg-green-500 text-white hover:bg-green-600"
+                          onClick={() => window.open(`https://social-plugins.line.me/lineit/share?url=${window.location.href}`, "_blank")}
+                        >
+                          LINEで拡散
+                        </Button>
+                        <Button
+                          className="bg-blue-700 text-white hover:bg-blue-800"
+                          onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`, "_blank")}
+                        >
+                          Facebookで拡散
+                        </Button>
+                      </div>
                     
                     
                     
