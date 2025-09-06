@@ -802,7 +802,7 @@ export default function CraftDiagnosticApp() {
     setSelectedOption(index)
     setTimeout(() => {
       const newAnswers = [...answers, ...traits]
-      setAnswers(newAnswers)
+    setAnswers(newAnswers.filter(answer => answer !== ""));
       setSelectedOption(null)
       if (currentQuestion < questions.length - 1) {
         setCurrentQuestion(currentQuestion + 1)
@@ -970,7 +970,7 @@ export default function CraftDiagnosticApp() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col justify-center items-center space-y-6">
-                  <img src="/placeholder-logo.png" alt="ロゴ" className="w-28 h-28 mb-2 rounded-full border" />
+                  <img src="\image-1757145314229.png" alt="おしでんロゴ" className="w-30 h-28 mb-2 rounded-full border" />
                   <div className="w-full flex justify-center">
                     <Button
                       className="bg-primary text-primary-foreground text-lg px-8 py-4 rounded-xl hover:bg-primary/90 w-full max-w-xs mx-auto"
